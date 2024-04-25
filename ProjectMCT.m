@@ -1,7 +1,3 @@
-% Name: AlayKumar Pandya
-% Course: Modern Control Theory Project 1
-clc
-close all;
 
 % Given Parameters
 Gp = tf([1], [1, 1, 0]); % Transfer function from equation
@@ -107,4 +103,27 @@ title('Discrete-Time Closed-Loop Step Response (Wn = 5 rad/s)');
 subplot(2, 2, 4);
 step(feedback(Gz2*Cz2, 1));
 title('Discrete-Time Closed-Loop Step Response (Wn = 10 rad/s)');
+
+#Output of the project
+System 1:
+         RiseTime: 0.2202
+    TransientTime: 10.8153
+     SettlingTime: 10.8153
+      SettlingMin: 0.3672
+      SettlingMax: 1.8092
+        Overshoot: 80.9206
+       Undershoot: 0
+             Peak: 1.8092
+         PeakTime: 0.6309
+
+System 2:
+         RiseTime: 0.1077
+    TransientTime: 8.8515
+     SettlingTime: 8.8515
+      SettlingMin: 0.2377
+      SettlingMax: 1.8754
+        Overshoot: 87.5390
+       Undershoot: 0
+             Peak: 1.8754
+         PeakTime: 0.3143
 
